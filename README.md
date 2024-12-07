@@ -8,12 +8,10 @@ This project aims to understand how Inverse Kinematic algorithms and implement t
 
 To implement different IK algorithm, I created two scripts, ComputeIk.cs, and AbstractJoint.cs.
 
-![](ReadMeResources/ComputeIk.png)<br/>
-
+<img src="ReadMeResources/ComputeIk.png>
 Since computeIK.cs will search for AbstractJoint.cs in his children, it needs to be placed on the parent of the first joint.
 
-![](ReadMeResources/Joint.png)<br/>
-
+![](ReadMeResources/Joint.png =250x250)<br/>
 The child class of AbstractJoint.cs will be place on the joints (bones) we want to be calculated.
 
 
@@ -23,16 +21,16 @@ I implemented this algorithm with constraints on bones. As you can see on the jo
 To move the limb manually, you can set the variable ```Target Override``` in ComputeIk.cs with an other object.
 
 Here is a showcase of the algorithm: 
-![](ReadMeResources/ShowCaseCDD.gif)<br/> 
+![](ReadMeResources/ShowCaseCDD.gif =250x250)<br/> 
 
 
 #### Know issues
 
 Since there are no interpolation, the limb can be teleported.
-![](ReadMeResources/Teleport.gif)<br/> 
+![](ReadMeResources/Teleport.gif =250x250)<br/> 
 
 If the position is placed at a bad angle and/or position, it is possible the limb cannot stabilize itself and be jittery.
-![](ReadMeResources/Jittery.gif)<br/> 
+![](ReadMeResources/Jittery.gif =250x250)<br/> 
 
 
 ### Ik Override
@@ -40,8 +38,8 @@ If the position is placed at a bad angle and/or position, it is possible the lim
 I was also able to make an abstract class to override the IK algorithm. Its children only needs to be placed on the joint to be overriden.
 
 For example, I created a behaviour to place the hand on a wall:
-![](ReadMeResources/IkOverride.png)<br/>
-![](ReadMeResources/ShowcaseIkOverride.gif)<br/> 
+![](ReadMeResources/IkOverride.png =250x250)<br/>
+![](ReadMeResources/ShowcaseIkOverride.gif =250x250)<br/> 
 
 
 ## Tech used
