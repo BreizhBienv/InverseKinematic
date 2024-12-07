@@ -24,7 +24,7 @@ Here is a showcase of the algorithm: <br/>
 <img src="ReadMeResources/ShowcaseCDD.gif" width=30% height=30%/>
 
 
-#### Know issues
+#### Known issues
 
 Since there are no interpolation, the limb can be teleported.<br/> 
 <img src="ReadMeResources/Teleport.gif" width=30% height=30%/>
